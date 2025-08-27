@@ -24,8 +24,8 @@
         </div>
 
         <div class="flex justify-between gap-[20px] mr-14">
-            <div class="heart-count gap-2 my-[30px] w-[70px] flex justify-center items-center bg-[#41ff6b1a] rounded-full">
-                <p>0</p>
+            <div class="gap-2 my-[30px] w-[70px] flex justify-center items-center bg-[#41ff6b1a] rounded-full">
+                <p id="heart-count">0</p>
                 <img class="w-7" src="./assets/heart.png" alt="">
             </div>
             <div class="coin-count gap-2 my-[30px] w-[80px] flex justify-center items-center bg-[#41ff6b1a] rounded-full">
@@ -49,12 +49,12 @@
     </section>
 
 <section class="full-card bg-[#f5fff6] my-6 mx-3 grid grid-cols-12 gap-8">
-  <div class="card-container grid grid-cols-3 gap-3 col-span-9">
+  <div id="card-section" class="card-container grid grid-cols-3 gap-3 col-span-9">
 
     <div class="card shadow-xl/20 w-80 p-3">
        <div class="logo-icon flex justify-between items-center">
         <img class="p-[7px] bg-[#FFE3E2] w-9 my-auto rounded-xl" src="./assets/emergency.png" alt="">
-         <i class="fa-regular fa-heart"></i>
+         <i id="heart-icon" class="fa-regular fa-heart"></i>
        </div>
 
     <div class="card-body w-80 p-0">
@@ -276,7 +276,7 @@
 
 
 
-
+<script src="./script/index.js"></script>
 
   </body>
 </html>
