@@ -45,31 +45,39 @@ alert(
     textMessage
 )
 
+// call history section
+const callContainer = getElement("call-info")
+const newDiv = document.createElement("div")
+newDiv.innerHTML = `
+<div class="call-section flex justify-between items-center mx-4 my-4 p-1 rounded-xl bg-gray-300">
+  
+        <div class="num-contact">
+          <h1 class="font-semibold">${serviceName}</h1>
+          <p>${serviceNumber}</p>
+        </div>
+  
+        <p>${new Date().toLocaleTimeString()
+}</p>
+  
+      </div>
+`
+callContainer.append(newDiv)
 
 
 availableCoinNumber = Number(coinNumber) - 20;
 getElement("coin-count").innerText = availableCoinNumber
-
-
-
-
-
-
-
-
-
-
         
-        
-        
-    }
-
-    
+    }    
 })
 
 
+// call clear feature
 
-
+getElement("call-clear-button")
+.addEventListener("click", function(){
+    const callinfoDiv = getElement("call-info")    
+    callinfoDiv.innerHTML = ""
+})
 
 
 
