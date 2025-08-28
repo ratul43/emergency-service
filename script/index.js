@@ -80,7 +80,17 @@ getElement("call-clear-button")
 })
 
 
+// copy button fetch
+document.getElementById("card-section")
+.addEventListener("click", function(e){
+    if(e.target.className.includes("copy-button")){
+const text = e.target.parentNode.parentNode.children[1].children[2].innerText
+navigator.clipboard.writeText(text)
+alert("Number copied: " + text)
 
+    }
+    
+})
 
 
 
