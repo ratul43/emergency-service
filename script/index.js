@@ -49,7 +49,7 @@ alert(
 const callContainer = getElement("call-info")
 const newDiv = document.createElement("div")
 newDiv.innerHTML = `
-<div class="call-section flex justify-between items-center mx-4 my-4 p-1 rounded-xl bg-gray-300">
+<div class="call-section md:flex justify-between items-center mx-4 my-4 p-1 rounded-xl bg-gray-300">
   
         <div class="num-contact">
           <h1 class="font-semibold">${serviceName}</h1>
