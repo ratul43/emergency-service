@@ -88,6 +88,12 @@ const text = e.target.parentNode.parentNode.children[1].children[2].innerText
 navigator.clipboard.writeText(text)
 alert("Number copied: " + text)
 
+const copyNum = document.getElementById("copy-count").innerText
+
+const currentCopyNum = Number(copyNum) + 1;
+
+document.getElementById("copy-count").innerText = currentCopyNum
+
     }
     
 })
